@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="search-bar">
+        <span class="material-symbols-outlined"> search </span>
+        <input type="text" />
+      </div>
+      <div class="users-profile">
+        <span class="material-symbols-outlined"> notifications </span>
+        <img
+          src="img/smokin-rat.jpg"
+          alt="user profile image"
+          class="user-image" />
+        <span class="user-name">Riskoder</span>
+      </div>
+      <div class="user-header">
+        <img
+          src="img/smokin-rat.jpg"
+          alt="user profile image"
+          class="user-image" />
+        <p class="welcome">Hi there,</p>
+        <p class="user-header-name">
+          Riskoder
+          <span class="user-nick"
+            >(<a
+              href="https://github.com/Riskoder/Project-Admin-Dashboard"
+              target="_blank"
+              >@Riskoder</a
+            >)</span
+          >
+        </p>
+      </div>
+      <div class="user-action">
+        <button class="btn new-post">New</button>
+        <button class="btn upload">Upload</button>
+        <button class="btn share">Share</button>
+      </div>
+    </header>
+    <aside class="aside">
+      <div class="db-title">
+        <span class="material-symbols-outlined"> dashboard </span>
+        Dashboard
+      </div>
+      <div class="db-options">
+        <div class="db-opt home">
+          <a href="#" class="db-link">
+            <span class="material-symbols-outlined" for="Home"> home </span
+            >Home</a
+          >
+        </div>
+        <div class="db-opt profile">
+          <a href="#" class="db-link"
+            ><span class="material-symbols-outlined"> account_box </span>
+            Profile</a
+          >
+        </div>
+        <div class="db-opt message">
+          <a href="#" class="db-link"
+            ><span class="material-symbols-outlined"> chat </span> Message</a
+          >
+        </div>
+        <div class="db-opt history">
+          <a href="#" class="db-link"
+            ><span class="material-symbols-outlined"> history </span> History</a
+          >
+        </div>
+        <div class="db-opt task">
+          <a href="#" class="db-link"
+            ><span class="material-symbols-outlined"> task </span> Task</a
+          >
+        </div>
+        <div class="db-opt communities">
+          <a href="#" class="db-link"
+            ><span class="material-symbols-outlined"> group </span>
+            communities</a
+          >
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="user-projects">
+        <h2>Your Projects</h2>
+        <article class="card-project">
+          <h3 class="card-title">Super Cool Project</h3>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            ullam quod facilis! Consequatur placeat necessitatibus aperiam
+            molestiae sapiente impedit nisi!
+          </p>
+          <div class="card-options">
+            <div class="start-opt"></div>
+            <div class="view-opt"></div>
+            <div class="commit-opt"></div>
+          </div>
+        </article>
+      </section>
+      <aside class="side-bar-projects">
+        <section class="announcements">
+          <div class="announ-card">
+            <div class="site-main">
+              <h3>Site Maintenance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                voluptatibus omnis inventore!
+              </p>
+            </div>
+          </div>
+          <div class="announ-card">
+            <div class="com">
+              <h3>Community Share Day</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                voluptatibus omnis inventore!
+              </p>
+            </div>
+          </div>
+          <div class="announ-card">
+            <div class="upd">
+              <h3>Updated Privacy Policy</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                voluptatibus omnis inventore!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="trending">
+          <div class="users-cards">
+            <div class="user-card">
+              <img
+                src="img/smokin-rat.jpg"
+                alt="user image"
+                class="user-image" />
+              <h4>@Riskoder</h4>
+              <p class="user-quote">The Odin Project <3</p>
+            </div>
+          </div>
+          <div class="users-cards">
+            <div class="user-card">
+              <img
+                src="img/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+                alt="user image"
+                class="user-image" />
+              <h4>@Marla</h4>
+              <p class="user-quote">I love rats</p>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>
