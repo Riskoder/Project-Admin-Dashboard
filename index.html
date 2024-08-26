@@ -17,11 +17,13 @@
   <body>
     <header class="header">
       <div class="search-bar">
-        <span class="material-symbols-outlined"> search </span>
-        <input type="text" />
+        <label for="src"
+          ><span class="material-symbols-outlined"> search </span>
+        </label>
+        <input type="text" id="src" />
       </div>
       <div class="users-profile">
-        <span class="material-symbols-outlined"> notifications </span>
+        <span class="material-symbols-outlined icon"> notifications </span>
         <img
           src="img/smokin-rat.jpg"
           alt="user profile image"
@@ -33,17 +35,20 @@
           src="img/smokin-rat.jpg"
           alt="user profile image"
           class="user-image" />
-        <p class="welcome">Hi there,</p>
-        <p class="user-header-name">
-          Riskoder
-          <span class="user-nick"
-            >(<a
-              href="https://github.com/Riskoder/Project-Admin-Dashboard"
-              target="_blank"
-              >@Riskoder</a
-            >)</span
-          >
-        </p>
+        <div>
+          <div class="welcome">Hi there,</div>
+          <div class="user-header-name">
+            Riskoder
+            <span class="user-nick"
+              >(<a
+                href="https://github.com/Riskoder/Project-Admin-Dashboard"
+                target="_blank"
+                class="link"
+                >@Riskoder</a
+              >)</span
+            >
+          </div>
+        </div>
       </div>
       <div class="user-action">
         <button class="btn new-post">New</button>
@@ -52,66 +57,183 @@
       </div>
     </header>
     <aside class="aside">
-      <div class="db-title">
-        <span class="material-symbols-outlined"> dashboard </span>
+      <div class="aside-title">
+        <span class="material-symbols-outlined" style="font-size: 36px">
+          dashboard
+        </span>
         Dashboard
       </div>
-      <div class="db-options">
-        <div class="db-opt home">
-          <a href="#" class="db-link">
-            <span class="material-symbols-outlined" for="Home"> home </span
-            >Home</a
-          >
-        </div>
-        <div class="db-opt profile">
-          <a href="#" class="db-link"
-            ><span class="material-symbols-outlined"> account_box </span>
-            Profile</a
-          >
-        </div>
-        <div class="db-opt message">
-          <a href="#" class="db-link"
-            ><span class="material-symbols-outlined"> chat </span> Message</a
-          >
-        </div>
-        <div class="db-opt history">
-          <a href="#" class="db-link"
-            ><span class="material-symbols-outlined"> history </span> History</a
-          >
-        </div>
-        <div class="db-opt task">
-          <a href="#" class="db-link"
-            ><span class="material-symbols-outlined"> task </span> Task</a
-          >
-        </div>
-        <div class="db-opt communities">
-          <a href="#" class="db-link"
-            ><span class="material-symbols-outlined"> group </span>
-            communities</a
-          >
-        </div>
+      <div class="aside-options">
+        <a href="#" class="aside-option">
+          <span class="material-symbols-outlined"> home </span>
+          <p>Home</p>
+        </a>
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> account_circle </span>
+          <p>Profile</p>
+        </a>
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> chat </span>
+          <p>Message</p></a
+        >
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> history </span>
+          <p>History</p></a
+        >
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> task </span>
+          <p>Task</p></a
+        >
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> groups </span>
+          <p>Communities</p></a
+        >
+        <a href="#" class="aside-option settings"
+          ><span class="material-symbols-outlined"> settings </span>
+          <p>Settings</p></a
+        >
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> help </span>
+          <p>Support</p></a
+        >
+        <a href="#" class="aside-option"
+          ><span class="material-symbols-outlined"> security </span>
+          <p>Privacy</p></a
+        >
       </div>
     </aside>
     <main class="main">
       <section class="user-projects">
         <h2>Your Projects</h2>
-        <article class="card-project">
-          <h3 class="card-title">Super Cool Project</h3>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            ullam quod facilis! Consequatur placeat necessitatibus aperiam
-            molestiae sapiente impedit nisi!
-          </p>
-          <div class="card-options">
-            <div class="start-opt"></div>
-            <div class="view-opt"></div>
-            <div class="commit-opt"></div>
-          </div>
-        </article>
+        <div class="cards-projects">
+          <article class="card-project">
+            <h3 class="card-title">Super Cool Project</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              ullam quod facilis! Consequatur placeat necessitatibus aperiam
+              molestiae sapiente impedit nisi!
+            </p>
+            <div class="card-options">
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> star </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> visibility </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined">
+                  arrow_and_edge
+                </span></a
+              >
+            </div>
+          </article>
+          <article class="card-project">
+            <h3 class="card-title">Super Cool Project</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              ullam quod facilis! Consequatur placeat necessitatibus aperiam
+              molestiae sapiente impedit nisi!
+            </p>
+            <div class="card-options">
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> star </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> visibility </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined">
+                  arrow_and_edge
+                </span></a
+              >
+            </div>
+          </article>
+          <article class="card-project">
+            <h3 class="card-title">Super Cool Project</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              ullam quod facilis! Consequatur placeat necessitatibus aperiam
+              molestiae sapiente impedit nisi!
+            </p>
+            <div class="card-options">
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> star </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> visibility </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined">
+                  arrow_and_edge
+                </span></a
+              >
+            </div>
+          </article>
+          <article class="card-project">
+            <h3 class="card-title">Super Cool Project</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              ullam quod facilis! Consequatur placeat necessitatibus aperiam
+              molestiae sapiente impedit nisi!
+            </p>
+            <div class="card-options">
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> star </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> visibility </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined">
+                  arrow_and_edge
+                </span></a
+              >
+            </div>
+          </article>
+          <article class="card-project">
+            <h3 class="card-title">Super Cool Project</h3>
+            <p class="card-description">Lorem ipsum dolor sit amet co</p>
+            <div class="card-options">
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> star </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> visibility </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined">
+                  arrow_and_edge
+                </span></a
+              >
+            </div>
+          </article>
+          <article class="card-project">
+            <h3 class="card-title">Super Cool Project</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              ullam quod facilis! Consequatur placeat necessitatibus aperiam
+              molestiae sapiente impedit nisi!
+            </p>
+            <div class="card-options">
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> star </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined"> visibility </span></a
+              >
+              <a href="#" class="opt"
+                ><span class="material-symbols-outlined">
+                  arrow_and_edge
+                </span></a
+              >
+            </div>
+          </article>
+        </div>
       </section>
-      <aside class="side-bar-projects">
+      <aside class="side-bar-info">
+        <h3>Announcements</h3>
         <section class="announcements">
-          <div class="announ-card">
+          <div class="card announ-card">
             <div class="site-main">
               <h3>Site Maintenance</h3>
               <p>
@@ -120,7 +242,7 @@
               </p>
             </div>
           </div>
-          <div class="announ-card">
+          <div class="card announ-card">
             <div class="com">
               <h3>Community Share Day</h3>
               <p>
@@ -129,7 +251,7 @@
               </p>
             </div>
           </div>
-          <div class="announ-card">
+          <div class="card announ-card">
             <div class="upd">
               <h3>Updated Privacy Policy</h3>
               <p>
@@ -140,24 +262,28 @@
           </div>
         </section>
         <section class="trending">
-          <div class="users-cards">
+          <h3>Trending</h3>
+          <div class="users-card-trending">
             <div class="user-card">
               <img
                 src="img/smokin-rat.jpg"
                 alt="user image"
                 class="user-image" />
-              <h4>@Riskoder</h4>
-              <p class="user-quote">The Odin Project <3</p>
+              <div>
+                <h4>@Riskoder</h4>
+                <p class="user-quote">The Odin Project <3</p>
+              </div>
             </div>
-          </div>
-          <div class="users-cards">
+
             <div class="user-card">
               <img
                 src="img/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
                 alt="user image"
                 class="user-image" />
-              <h4>@Marla</h4>
-              <p class="user-quote">I love rats</p>
+              <div>
+                <h4>@Marla</h4>
+                <p class="user-quote">I love rats</p>
+              </div>
             </div>
           </div>
         </section>
